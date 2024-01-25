@@ -19,26 +19,3 @@ Mon projet, intitulé `« Insertion professionnelle »`, vise à créer une plat
 ## Les Liens 
 [Figma design](https://www.figma.com/file/gW2E6MW1EAAdYPuGsQoUQB/Untitled?type=design&node-id=0%3A1&mode=design&t=yCkknPFjLAWvYmWL-1)
 [Presentation google slide](https://docs.google.com/presentation/d/12_XV04dSd0gY0H8IUFfdpqUhHVZo-6sobjXJ8WWCWbE/edit?usp=sharing)
-
-- LinkedIn
-- Facebook
-- Twitter
-- Instagram
-- Discord
-
-
-- GitHub
-- Stack Overflow
-- CodePen
-
-- Kaggle
-- CodeChef
-- Codeforces
-- LeetCode
-- HackerRank
-- HackerEarth
-- Topcoder
-
-- Dribbble
-- Behance
-- Medium
