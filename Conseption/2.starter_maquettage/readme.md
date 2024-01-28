@@ -45,3 +45,15 @@ npm install @fortawesome/fontawesome-free
 ```bash
 @import "@fortawesome/fontawesome-free/css/all.css";
 ```
+### Installation de Laravel UI AdminLTE
+```bash
+composer require infyomlabs/laravel-ui-adminlte
+```
+Générer l'authentification avec AdminLTE UI
+
+- Utilisez la commande Artisan pour générer le système d'authentification avec l'interface utilisateur AdminLTE.
+
+```bash
+php artisan ui adminlte --auth
+```
+
