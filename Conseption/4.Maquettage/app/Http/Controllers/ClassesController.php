@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class SchoolYearsController extends Controller
+class ClassesController extends Controller
 {
     public function __construct()
     {
@@ -13,9 +13,9 @@ class SchoolYearsController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('school_years.index');
+        return view('classes.index', );
     }
 
     /**
@@ -39,7 +39,6 @@ class SchoolYearsController extends Controller
      */
     public function show(string $id)
     {
-        return view('classes.index', compact('id'));
     }
 
     /**

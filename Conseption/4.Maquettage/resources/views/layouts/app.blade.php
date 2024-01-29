@@ -1,3 +1,4 @@
+@vite(['resources/css/app.css', 'resources/js/app.js'])
 <x-laravel-ui-adminlte::adminlte-layout>
 
     <body class="hold-transition sidebar-mini layout-fixed">
@@ -11,7 +12,6 @@
                                 class="fas fa-bars"></i></a>
                     </li>
                 </ul>
-
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown user-menu">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">

@@ -4,18 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class SchoolYearsController extends Controller
+class TraineesController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('school_years.index');
+        $id = $request->input('class');
+        return view('trainees.index', compact('id'));
     }
 
     /**
@@ -23,7 +20,7 @@ class SchoolYearsController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -39,7 +36,7 @@ class SchoolYearsController extends Controller
      */
     public function show(string $id)
     {
-        return view('classes.index', compact('id'));
+        return view('trainees.show');
     }
 
     /**
@@ -47,7 +44,7 @@ class SchoolYearsController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return view('trainees.edit');
     }
 
     /**

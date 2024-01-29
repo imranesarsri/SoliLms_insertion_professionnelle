@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ClassesController;
+use App\Http\Controllers\TraineesController;
 use App\Http\Controllers\SchoolYearsController;
 
 /*
@@ -13,7 +16,9 @@ use App\Http\Controllers\SchoolYearsController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::resource('/', SchoolYearsController::class);
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [SchoolYearsController::class, 'index'])->name('SchoolYears');
+Route::resource('années_scolaires', SchoolYearsController::class);
+Route::resource('classes', ClassesController::class);
+Route::resource('apprenants', TraineesController::class);
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 Auth::routes();
