@@ -64,13 +64,16 @@
                     <span class="btn btn-info col fileinput-button dz-clickable">
                         <i class="fa-solid fa-download"></i> <span>emport cv</span>
                     </span>
+                    {{-- <input type="file" class="btn btn-info col fileinput-button dz-clickable" name=""
+                        id=""> --}}
                 </div>
             </div>
 
 
             <div class="card-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit">Submit</button>
             </div>
         </form>
+
     </div>
 @endsection
