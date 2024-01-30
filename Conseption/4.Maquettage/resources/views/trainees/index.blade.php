@@ -8,10 +8,13 @@
             </div>
             <div class="col-sm-4">
                 <div class="float-sm-right ">
-                    <a href="#Ajouter" type="button" class="btn btn-block btn-primary nav-item nav-link text-light"
-                        data-toggle="tab">
-                        <i class="fa-solid fa-plus"></i>
-                    </a>
+                    @if (Auth::user()->name === 'admin')
+                        <a href="#Ajouter" type="button" class="btn btn-block btn-primary nav-item nav-link text-light"
+                            data-toggle="tab">
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
+                    @endif
+
                 </div>
             </div>
         </div>
@@ -82,7 +85,9 @@
                             </div>
                         </td>
                         <td class="d-flex justify-content-center ">
-                            <i class="fa-solid fa-trash-can btn-danger p-2 "></i>
+                            @if (Auth::user()->name === 'admin')
+                                <i class="fa-solid fa-trash-can btn-danger p-2 "></i>
+                            @endif
                             <a href="{{ route('apprenants.show', ['apprenant' => '1']) }}">
                                 <i class="fa-solid fa-eye btn-default p-2 "></i>
                             </a>
@@ -99,13 +104,18 @@
                             <span class="badge bg-danger p-2">Chômeuse</span>
                         </td>
                         <td class="d-flex justify-content-center ">
-                            <i class="fa-solid fa-trash-can btn-danger p-2 "></i>
+                            @if (Auth::user()->name === 'admin')
+                                <i class="fa-solid fa-trash-can btn-danger p-2 "></i>
+                            @endif
                             <a href="{{ route('apprenants.show', ['apprenant' => '1']) }}">
                                 <i class="fa-solid fa-eye btn-default p-2 "></i>
                             </a>
-                            <a href="{{ route('apprenants.edit', ['apprenant' => '1']) }}">
-                                <i class="fa-solid fa-pen btn-default p-2 "></i>
-                            </a>
+                            @if (Auth::user()->name === 'admin')
+                                <a href="{{ route('apprenants.edit', ['apprenant' => '1']) }}">
+                                    <i class="fa-solid fa-pen btn-default p-2 "></i>
+                                </a>
+                            @endif
+
                         </td>
                     </tr>
                     <tr>
@@ -118,13 +128,18 @@
                             </div>
                         </td>
                         <td class="d-flex justify-content-center ">
-                            <i class="fa-solid fa-trash-can btn-danger p-2 "></i>
+                            @if (Auth::user()->name === 'admin')
+                                <i class="fa-solid fa-trash-can btn-danger p-2 "></i>
+                            @endif
                             <a href="{{ route('apprenants.show', ['apprenant' => '1']) }}">
                                 <i class="fa-solid fa-eye btn-default p-2 "></i>
                             </a>
-                            <a href="{{ route('apprenants.edit', ['apprenant' => '1']) }}">
-                                <i class="fa-solid fa-pen btn-default p-2 "></i>
-                            </a>
+                            @if (Auth::user()->name === 'admin')
+                                <a href="{{ route('apprenants.edit', ['apprenant' => '1']) }}">
+                                    <i class="fa-solid fa-pen btn-default p-2 "></i>
+                                </a>
+                            @endif
+
                         </td>
                     </tr>
                     <tr>
@@ -135,13 +150,18 @@
                             <span class="badge bg-primary p-2">Employé</span>
                         </td>
                         <td class="d-flex justify-content-center ">
-                            <i class="fa-solid fa-trash-can btn-danger p-2 "></i>
+                            @if (Auth::user()->name === 'admin')
+                                <i class="fa-solid fa-trash-can btn-danger p-2 "></i>
+                            @endif
                             <a href="{{ route('apprenants.show', ['apprenant' => '1']) }}">
                                 <i class="fa-solid fa-eye btn-default p-2 "></i>
                             </a>
-                            <a href="{{ route('apprenants.edit', ['apprenant' => '1']) }}">
-                                <i class="fa-solid fa-pen btn-default p-2 "></i>
-                            </a>
+                            @if (Auth::user()->name === 'admin')
+                                <a href="{{ route('apprenants.edit', ['apprenant' => '1']) }}">
+                                    <i class="fa-solid fa-pen btn-default p-2 "></i>
+                                </a>
+                            @endif
+
                         </td>
                     </tr>
                     <tr>
@@ -150,13 +170,18 @@
                         <td>adnan.2.solicoders@gmail.com</td>
                         <td><span class="badge bg-primary p-2">Employé</span></td>
                         <td class="d-flex justify-content-center ">
-                            <i class="fa-solid fa-trash-can btn-danger p-2 "></i>
+                            @if (Auth::user()->name === 'admin')
+                                <i class="fa-solid fa-trash-can btn-danger p-2 "></i>
+                            @endif
                             <a href="{{ route('apprenants.show', ['apprenant' => '1']) }}">
                                 <i class="fa-solid fa-eye btn-default p-2 "></i>
                             </a>
-                            <a href="{{ route('apprenants.edit', ['apprenant' => '1']) }}">
-                                <i class="fa-solid fa-pen btn-default p-2 "></i>
-                            </a>
+                            @if (Auth::user()->name === 'admin')
+                                <a href="{{ route('apprenants.edit', ['apprenant' => '1']) }}">
+                                    <i class="fa-solid fa-pen btn-default p-2 "></i>
+                                </a>
+                            @endif
+
                         </td>
                     </tr>
 
