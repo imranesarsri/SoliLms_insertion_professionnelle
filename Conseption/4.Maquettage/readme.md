@@ -1,59 +1,78 @@
-## Starter Maquettage
+## Maquettage
 
-### Création d’un projet Laravel
-```bash
-composer create-project laravel/laravel .
+### Pour Exécuter ce projet
 ```
-
-### Installer adminLTE en utilisant npm
-1. Installing prerequisites
-- Node.js
-- NPM
-- PHP 7.2.5 ou supérieur
-- Un serveur web (Apache, Nginx, etc.)
-2. Installing AdminLTE
-```bash
-npm install admin-lte@^3.2 
-```
-3. Importing AdminLTE CSS and JavaScript
-- In `resources/css/app.css`, import the CSS from AdminLTE and Font Awesome:\
-```bash
-@import 'admin-lte/plugins/fontawesome-free/css/all.min.css';
-@import 'admin-lte/dist/css/adminlte.min.css';
-```
-- `In resources/js/app.js`, import the AdminLTE JavaScript:
-```bash
-import 'admin-lte/dist/js/adminlte';
-```
-4. Install dependencies and build assets
-```bash
+composer install
 npm install
+```
+
+```
+php artisan serve
 npm run dev
 ```
-5. Configuring Laravel to use Vite Open your Laravel layout file (for example, resources/views/layouts/app.blade.php) and include the Vite assets:
+
+
+**Ajoute file** `.env`
 
 ```bash
-@vite(['resources/css/app.css', 'resources/js/app.js'])
-```
+APP_NAME=Laravel
+APP_ENV=local
+APP_KEY=base64:q2TXrdhE/+9rKXYCZo99cxTRqIiFZP3zXwbjUyS0gg4=
+APP_DEBUG=true
+APP_URL=http://localhost
 
-### Installer FontAwesome Icons en utilisant npm
-1.  Installing FontAwesome Icons
-```bash
-npm install @fortawesome/fontawesome-free
-```
-2. Importing fortawesome CSS `resources/css/app.css`
-```bash
-@import "@fortawesome/fontawesome-free/css/all.css";
-```
-### Installation de Laravel UI AdminLTE
-```bash
-composer require infyomlabs/laravel-ui-adminlte
-```
-Générer l'authentification avec AdminLTE UI
+LOG_CHANNEL=stack
+LOG_DEPRECATIONS_CHANNEL=null
+LOG_LEVEL=debug
 
-- Utilisez la commande Artisan pour générer le système d'authentification avec l'interface utilisateur AdminLTE.
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=SoliLms_Insertion_Professionnelle
+DB_USERNAME=root
+DB_PASSWORD=solicoders
 
-```bash
-php artisan ui adminlte --auth
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+FILESYSTEM_DISK=local
+QUEUE_CONNECTION=sync
+SESSION_DRIVER=file
+SESSION_LIFETIME=120
+
+MEMCACHED_HOST=127.0.0.1
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+MAIL_MAILER=smtp
+MAIL_HOST=mailpit
+MAIL_PORT=1025
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+MAIL_FROM_ADDRESS="hello@example.com"
+MAIL_FROM_NAME="${APP_NAME}"
+
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_DEFAULT_REGION=us-east-1
+AWS_BUCKET=
+AWS_USE_PATH_STYLE_ENDPOINT=false
+
+PUSHER_APP_ID=
+PUSHER_APP_KEY=
+PUSHER_APP_SECRET=
+PUSHER_HOST=
+PUSHER_PORT=443
+PUSHER_SCHEME=https
+PUSHER_APP_CLUSTER=mt1
+
+VITE_APP_NAME="${APP_NAME}"
+VITE_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
+VITE_PUSHER_HOST="${PUSHER_HOST}"
+VITE_PUSHER_PORT="${PUSHER_PORT}"
+VITE_PUSHER_SCHEME="${PUSHER_SCHEME}"
+VITE_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
+
 ```
-
