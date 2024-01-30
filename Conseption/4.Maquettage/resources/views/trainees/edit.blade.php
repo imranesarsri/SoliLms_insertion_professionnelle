@@ -7,42 +7,47 @@
         </div>
         <form>
             <div class="card-body">
-                <div class="form-group">
-                    <label for="Nom_complet">Nom complet</label>
-                    <input type="text" class="form-control" id="Nom_complet" placeholder="Enter Nom complet">
-                </div>
-                <div class="form-group">
-                    <label for="Numéro_de_téléphone">Numéro de téléphone</label>
-                    <input type="text" class="form-control" id="Numéro_de_téléphone"
-                        placeholder="Enter Numéro de téléphone">
-                </div>
-                <div class="form-group">
-                    <label for="email">email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                    <label for="Statut_d'Activité">Statut d'Activité</label>
-                    <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1"
-                        tabindex="-1" aria-hidden="true">
-                        <option data-select2-id="34">Étudiant</option>
-                        <option data-select2-id="35">Stagiaire</option>
-                        <option data-select2-id="36">Employé</option>
-                        <option data-select2-id="36">Chômeuse</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="Linkden">Linkden</label>
-                    <input type="text" class="form-control" id="Linkden"
-                        placeholder="Entrez le lien de votre compte sur linkden">
-                </div>
-                <div class="form-group">
-                    <label for="Github">Github</label>
-                    <input type="text" class="form-control" id="Github"
-                        placeholder="Entrez le lien de votre compte sur github">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="Nom_complet">Nom complet <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="Nom_complet" placeholder="Enter Nom complet">
+                        </div>
+                        <div class="form-group">
+                            <label for="Numéro_de_téléphone">Numéro de téléphone <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="Numéro_de_téléphone"
+                                placeholder="Enter Numéro de téléphone">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">email <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="Statut_d'Activité">Statut d'Activité</label>
+                            <select class="form-control select2 select2-hidden-accessible" style="width: 100%;"
+                                data-select2-id="1" tabindex="-1" aria-hidden="true">
+                                <option data-select2-id="34">Étudiant</option>
+                                <option data-select2-id="35">Stagiaire</option>
+                                <option data-select2-id="36">Employé</option>
+                                <option data-select2-id="36">Chômeuse</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="Linkden">Linkden</label>
+                            <input type="text" class="form-control" id="Linkden"
+                                placeholder="Entrez le lien de votre compte sur linkden">
+                        </div>
+                        <div class="form-group">
+                            <label for="Github">Github</label>
+                            <input type="text" class="form-control" id="Github"
+                                placeholder="Entrez le lien de votre compte sur github">
+                        </div>
+                    </div>
                 </div>
 
                 <hr>
-                <h5>Projets :</h5>
                 <div class="form-group">
                     <label for="Projet_1">Projet 1</label>
                     <input type="text" class="form-control mb-2" id="Projet_1" placeholder="Entrez le lien de projet 1">
@@ -62,7 +67,7 @@
                 <div class="form-group">
                     <label for="Github">CV</label>
                     <span class="btn btn-info col fileinput-button dz-clickable">
-                        <i class="fa-solid fa-download"></i> <span>emport cv</span>
+                        <i class="fa-solid fa-download text-light"></i> <span class="text-light">Import cv</span>
                     </span>
                     {{-- <input type="file" class="btn btn-info col fileinput-button dz-clickable" name=""
                         id=""> --}}
@@ -71,7 +76,8 @@
 
 
             <div class="card-footer">
-                <button type="submit">Submit</button>
+                <a href="{{ route('apprenants.index') }}" class="btn btn-primary">Edit</a>
+                <a href="{{ route('apprenants.index') }}" class="btn btn-default">Annuler</a>
             </div>
         </form>
 

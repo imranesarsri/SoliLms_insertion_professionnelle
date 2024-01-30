@@ -54,7 +54,7 @@
                         <div class="col">
                             <h6 class="m-b-25 text-dark ">DMB-101</h6>
                             <h3 class="f-w-700 text-dark">Solicoders</h3>
-                            <p class="m-b-0 text-dark">Foead draje</p>
+                            <p class="m-b-0 text-dark">ESSARRAJ Fouad</p>
                         </div>
                         <div class="col-auto rounded-circle bg-primary p-2">
                             <i class="fas fa-bullseye text-light"></i>
@@ -76,7 +76,7 @@
                         <div class="col">
                             <h6 class="m-b-25 text-dark">DWB-101</h6>
                             <h3 class="f-w-700 text-dark">Solicoders</h3>
-                            <p class="m-b-0 text-dark">Foead draje</p>
+                            <p class="m-b-0 text-dark">ESSARRAJ Fouad</p>
                         </div>
                         <div class="col-auto rounded-circle bg-info p-2">
                             <i class="fas fa-bullseye text-light"></i>
@@ -92,7 +92,7 @@
                         <div class="col">
                             <h6 class="m-b-25 text-dark">DWB-102</h6>
                             <h3 class="f-w-700 text-dark">Solicoders</h3>
-                            <p class="m-b-0 text-dark">Foead draje</p>
+                            <p class="m-b-0 text-dark">ESSARRAJ Fouad</p>
                         </div>
                         <div class="col-auto rounded-circle bg-success p-2">
                             <i class="fas fa-bullseye text-light"></i>
@@ -108,7 +108,7 @@
                         <div class="col">
                             <h6 class="m-b-25 text-dark">DWB-103</h6>
                             <h3 class="f-w-700 text-dark">Solicoders</h3>
-                            <p class="m-b-0 text-dark">Foead draje</p>
+                            <p class="m-b-0 text-dark">ESSARRAJ Fouad</p>
                         </div>
                         <div class="col-auto rounded-circle bg-danger  p-2">
                             <i class="fas fa-bullseye text-light"></i>
@@ -124,7 +124,7 @@
                         <div class="col">
                             <h6 class="m-b-25 text-dark">DWB-104</h6>
                             <h3 class="f-w-700 text-dark">Solicoders</h3>
-                            <p class="m-b-0 text-dark">Foead draje</p>
+                            <p class="m-b-0 text-dark">ESSARRAJ Fouad</p>
                         </div>
                         <div class="col-auto rounded-circle bg-warning p-2">
                             <i class="fas fa-bullseye text-light"></i>

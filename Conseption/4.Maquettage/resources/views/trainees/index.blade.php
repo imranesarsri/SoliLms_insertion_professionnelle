@@ -60,6 +60,7 @@
         </div>
 
         <div class="card-body">
+
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -81,7 +82,7 @@
                             </div>
                         </td>
                         <td class="d-flex justify-content-center ">
-                            <i class="fa-solid fa-trash-can btn-default p-2 "></i>
+                            <i class="fa-solid fa-trash-can btn-danger p-2 "></i>
                             <a href="{{ route('apprenants.show', ['apprenant' => '1']) }}">
                                 <i class="fa-solid fa-eye btn-default p-2 "></i>
                             </a>
@@ -97,10 +98,14 @@
                         <td>
                             <span class="badge bg-danger p-2">Chômeuse</span>
                         </td>
-                        <td class="d-flex justify-content-center">
-                            <i class="fa-solid fa-trash-can btn-default p-2 "></i>
-                            <i class="fa-solid fa-eye btn-default p-2 "></i>
-                            <i class="fa-solid fa-pen btn-default p-2 "></i>
+                        <td class="d-flex justify-content-center ">
+                            <i class="fa-solid fa-trash-can btn-danger p-2 "></i>
+                            <a href="{{ route('apprenants.show', ['apprenant' => '1']) }}">
+                                <i class="fa-solid fa-eye btn-default p-2 "></i>
+                            </a>
+                            <a href="{{ route('apprenants.edit', ['apprenant' => '1']) }}">
+                                <i class="fa-solid fa-pen btn-default p-2 "></i>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -113,9 +118,13 @@
                             </div>
                         </td>
                         <td class="d-flex justify-content-center ">
-                            <i class="fa-solid fa-trash-can btn-default p-2 "></i>
-                            <i class="fa-solid fa-eye btn-default p-2 "></i>
-                            <i class="fa-solid fa-pen btn-default p-2 "></i>
+                            <i class="fa-solid fa-trash-can btn-danger p-2 "></i>
+                            <a href="{{ route('apprenants.show', ['apprenant' => '1']) }}">
+                                <i class="fa-solid fa-eye btn-default p-2 "></i>
+                            </a>
+                            <a href="{{ route('apprenants.edit', ['apprenant' => '1']) }}">
+                                <i class="fa-solid fa-pen btn-default p-2 "></i>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -126,9 +135,13 @@
                             <span class="badge bg-primary p-2">Employé</span>
                         </td>
                         <td class="d-flex justify-content-center ">
-                            <i class="fa-solid fa-trash-can btn-default p-2 "></i>
-                            <i class="fa-solid fa-eye btn-default p-2 "></i>
-                            <i class="fa-solid fa-pen btn-default p-2 "></i>
+                            <i class="fa-solid fa-trash-can btn-danger p-2 "></i>
+                            <a href="{{ route('apprenants.show', ['apprenant' => '1']) }}">
+                                <i class="fa-solid fa-eye btn-default p-2 "></i>
+                            </a>
+                            <a href="{{ route('apprenants.edit', ['apprenant' => '1']) }}">
+                                <i class="fa-solid fa-pen btn-default p-2 "></i>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -137,9 +150,13 @@
                         <td>adnan.2.solicoders@gmail.com</td>
                         <td><span class="badge bg-primary p-2">Employé</span></td>
                         <td class="d-flex justify-content-center ">
-                            <i class="fa-solid fa-trash-can btn-default p-2 "></i>
-                            <i class="fa-solid fa-eye btn-default p-2 "></i>
-                            <i class="fa-solid fa-pen btn-default p-2 "></i>
+                            <i class="fa-solid fa-trash-can btn-danger p-2 "></i>
+                            <a href="{{ route('apprenants.show', ['apprenant' => '1']) }}">
+                                <i class="fa-solid fa-eye btn-default p-2 "></i>
+                            </a>
+                            <a href="{{ route('apprenants.edit', ['apprenant' => '1']) }}">
+                                <i class="fa-solid fa-pen btn-default p-2 "></i>
+                            </a>
                         </td>
                     </tr>
 
