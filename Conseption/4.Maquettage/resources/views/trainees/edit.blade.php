@@ -19,8 +19,15 @@
                                 placeholder="Enter Numéro de téléphone">
                         </div>
                         <div class="form-group">
-                            <label for="email">email <span class="text-danger">*</span></label>
+                            <label for="email">Email <span class="text-danger">*</span></label>
                             <input type="email" class="form-control" id="email" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="image">Image <span class="text-danger">*</span></label>
+                            {{-- <input type="file" class="form-control" id="image" placeholder="Enter image"> --}}
+                            <span class="btn btn-info col fileinput-button dz-clickable">
+                                <i class="fa-solid fa-download text-light"></i> <span class="text-light">Import image</span>
+                            </span>
                         </div>
                     </div>
                     <div class="col">
@@ -44,6 +51,13 @@
                             <input type="text" class="form-control" id="Github"
                                 placeholder="Entrez le lien de votre compte sur github">
                         </div>
+                        <div class="form-group">
+                            <label for="Import_cv">Import CV <span class="text-danger">*</span></label>
+                            {{-- <input type="file" class="form-control" id="Import_cv" placeholder="Enter Import_cv"> --}}
+                            <span class="btn btn-info col fileinput-button dz-clickable">
+                                <i class="fa-solid fa-download text-light"></i> <span class="text-light">Import cv</span>
+                            </span>
+                        </div>
                     </div>
                 </div>
 
@@ -63,23 +77,11 @@
                     <input type="text" class="form-control mb-2" id="Projet_3" placeholder="Entrez le lien de projet 2">
                     <textarea class="form-control" rows="3" placeholder="Entrez une description liée à ce projet"></textarea>
                 </div>
-                <hr>
-                <div class="form-group">
-                    <label for="Github">CV</label>
-                    <span class="btn btn-info col fileinput-button dz-clickable">
-                        <i class="fa-solid fa-download text-light"></i> <span class="text-light">Import cv</span>
-                    </span>
-                    {{-- <input type="file" class="btn btn-info col fileinput-button dz-clickable" name=""
-                        id=""> --}}
-                </div>
             </div>
-
-
             <div class="card-footer">
                 <a href="{{ route('apprenants.index') }}" class="btn btn-primary">Edit</a>
                 <a href="{{ route('apprenants.index') }}" class="btn btn-default">Annuler</a>
             </div>
         </form>
-
     </div>
 @endsection

@@ -54,4 +54,22 @@
             </div>
         </div>
     </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function() {
+            $('.lock-next-card').click(function() {
+                // Verrouiller la carte suivante en ajoutant une classe spécifique
+                $('#card-to-lock').toggleClass('d-none');
+            });
+        });
+        $(document).ready(function() {
+            $('.create_form_dropdown').click(function() {
+                // Verrouiller la carte suivante en ajoutant une classe spécifique
+                $('#form_dropdown').toggleClass('d-none');
+            });
+        });
+    </script>
+
 </x-laravel-ui-adminlte::adminlte-layout>
