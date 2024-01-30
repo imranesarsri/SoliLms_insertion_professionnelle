@@ -7,12 +7,15 @@
                 <h1>Années scolaires</h1>
             </div>
             <div class="col-sm-4">
-                <div class="float-sm-right">
-                    <a href="" type="button"
-                        class="btn btn-block btn-primary nav-item nav-link text-light create_form_dropdown" data-toggle="tab">
-                        <i class="fa-solid fa-plus"></i>
-                    </a>
-                </div>
+                @if (Auth::user()->name === 'admin')
+                    <div class="float-sm-right">
+                        <a href="" type="button"
+                            class="btn btn-block btn-primary nav-item nav-link text-light create_form_dropdown"
+                            data-toggle="tab">
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
+                    </div>
+                @endif
             </div>
         </div>
     </div>
@@ -42,24 +45,26 @@
 
         <div class="col-xl-4 col-lg-6 col-md-12 ">
             <div class="card info-box bg-gradient">
-                <div class="card-header d-flex justify-content-end" style="padding: 0rem;!important">
-                    <div class="btn">
-                        <button type="button" class="btn btn-sm " data-toggle="dropdown" data-offset="-52"
-                            aria-expanded="false">
-                            <i class="fa-solid fa-ellipsis-vertical text-dark"></i>
-                        </button>
-                        <div class="dropdown-menu" role="menu">
-                            <a href="#" class="dropdown-item">
-                                <i class="fa-solid fa-trash-can text-danger p-2"></i>
-                                <span>Supprimer</span>
-                            </a>
-                            <a href="#" class="dropdown-item lock-next-card">
-                                <i class="fa-solid fa-pen text-primary p-2 "></i>
-                                <span>modify</span>
-                            </a>
+                @if (Auth::user()->name === 'admin')
+                    <div class="card-header d-flex justify-content-end" style="padding: 0rem;!important">
+                        <div class="btn">
+                            <button type="button" class="btn btn-sm " data-toggle="dropdown" data-offset="-52"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis-vertical text-dark"></i>
+                            </button>
+                            <div class="dropdown-menu" role="menu">
+                                <a href="#" class="dropdown-item">
+                                    <i class="fa-solid fa-trash-can text-danger p-2"></i>
+                                    <span>Supprimer</span>
+                                </a>
+                                <a href="#" class="dropdown-item lock-next-card">
+                                    <i class="fa-solid fa-pen text-primary p-2 "></i>
+                                    <span>modify</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                @endif
                 <a href="{{ route('classes.index') }}" class="card-body" style="padding: 0.25rem;!important">
                     <div class="row align-items-center m-b-30">
                         <div class="info-box-icon p-4 text-dark">
@@ -104,24 +109,26 @@
         <div class="col-xl-4 col-lg-6 col-md-12 ">
 
             <div class="card info-box bg-gradient">
-                <div class="card-header d-flex justify-content-end" style="padding: 0rem;!important">
-                    <div class="btn">
-                        <button type="button" class="btn btn-sm " data-toggle="dropdown" data-offset="-52"
-                            aria-expanded="false">
-                            <i class="fa-solid fa-ellipsis-vertical text-dark"></i>
-                        </button>
-                        <div class="dropdown-menu" role="menu">
-                            <a href="#" class="dropdown-item">
-                                <i class="fa-solid fa-trash-can text-danger p-2"></i>
-                                <span>Supprimer</span>
-                            </a>
-                            <a href="#" class="dropdown-item lock-next-card">
-                                <i class="fa-solid fa-pen text-primary p-2 "></i>
-                                <span>modify</span>
-                            </a>
+                @if (Auth::user()->name === 'admin')
+                    <div class="card-header d-flex justify-content-end" style="padding: 0rem;!important">
+                        <div class="btn">
+                            <button type="button" class="btn btn-sm " data-toggle="dropdown" data-offset="-52"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis-vertical text-dark"></i>
+                            </button>
+                            <div class="dropdown-menu" role="menu">
+                                <a href="#" class="dropdown-item">
+                                    <i class="fa-solid fa-trash-can text-danger p-2"></i>
+                                    <span>Supprimer</span>
+                                </a>
+                                <a href="#" class="dropdown-item lock-next-card">
+                                    <i class="fa-solid fa-pen text-primary p-2 "></i>
+                                    <span>modify</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                @endif
                 <a href="{{ route('classes.index') }}" class="card-body" style="padding: 0.25rem;!important">
                     <div class="row align-items-center m-b-30">
                         <div class="info-box-icon p-4 text-dark">
@@ -138,24 +145,26 @@
         <div class="col-xl-4 col-lg-6 col-md-12 ">
 
             <div class="card info-box bg-gradient">
-                <div class="card-header d-flex justify-content-end" style="padding: 0rem;!important">
-                    <div class="btn">
-                        <button type="button" class="btn btn-sm " data-toggle="dropdown" data-offset="-52"
-                            aria-expanded="false">
-                            <i class="fa-solid fa-ellipsis-vertical text-dark"></i>
-                        </button>
-                        <div class="dropdown-menu" role="menu">
-                            <a href="#" class="dropdown-item">
-                                <i class="fa-solid fa-trash-can text-danger p-2"></i>
-                                <span>Supprimer</span>
-                            </a>
-                            <a href="#" class="dropdown-item lock-next-card">
-                                <i class="fa-solid fa-pen text-primary p-2 "></i>
-                                <span>modify</span>
-                            </a>
+                @if (Auth::user()->name === 'admin')
+                    <div class="card-header d-flex justify-content-end" style="padding: 0rem;!important">
+                        <div class="btn">
+                            <button type="button" class="btn btn-sm " data-toggle="dropdown" data-offset="-52"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis-vertical text-dark"></i>
+                            </button>
+                            <div class="dropdown-menu" role="menu">
+                                <a href="#" class="dropdown-item">
+                                    <i class="fa-solid fa-trash-can text-danger p-2"></i>
+                                    <span>Supprimer</span>
+                                </a>
+                                <a href="#" class="dropdown-item lock-next-card">
+                                    <i class="fa-solid fa-pen text-primary p-2 "></i>
+                                    <span>modify</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                @endif
                 <a href="{{ route('classes.index') }}" class="card-body" style="padding: 0.25rem;!important">
                     <div class="row align-items-center m-b-30">
                         <div class="info-box-icon p-4 text-dark">
@@ -172,24 +181,26 @@
 
         <div class="col-xl-4 col-lg-6 col-md-12 ">
             <div class="card info-box bg-gradient">
-                <div class="card-header d-flex justify-content-end" style="padding: 0rem;!important">
-                    <div class="btn">
-                        <button type="button" class="btn btn-sm " data-toggle="dropdown" data-offset="-52"
-                            aria-expanded="false">
-                            <i class="fa-solid fa-ellipsis-vertical text-dark"></i>
-                        </button>
-                        <div class="dropdown-menu" role="menu">
-                            <a href="#" class="dropdown-item">
-                                <i class="fa-solid fa-trash-can text-danger p-2"></i>
-                                <span>Supprimer</span>
-                            </a>
-                            <a href="#" class="dropdown-item lock-next-card">
-                                <i class="fa-solid fa-pen text-primary p-2 "></i>
-                                <span>modify</span>
-                            </a>
+                @if (Auth::user()->name === 'admin')
+                    <div class="card-header d-flex justify-content-end" style="padding: 0rem;!important">
+                        <div class="btn">
+                            <button type="button" class="btn btn-sm " data-toggle="dropdown" data-offset="-52"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis-vertical text-dark"></i>
+                            </button>
+                            <div class="dropdown-menu" role="menu">
+                                <a href="#" class="dropdown-item">
+                                    <i class="fa-solid fa-trash-can text-danger p-2"></i>
+                                    <span>Supprimer</span>
+                                </a>
+                                <a href="#" class="dropdown-item lock-next-card">
+                                    <i class="fa-solid fa-pen text-primary p-2 "></i>
+                                    <span>modify</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                @endif
                 <a href="{{ route('classes.index') }}" class="card-body" style="padding: 0.25rem;!important">
                     <div class="row align-items-center m-b-30">
                         <div class="info-box-icon p-4 text-dark">
